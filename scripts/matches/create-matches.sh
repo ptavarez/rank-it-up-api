@@ -1,4 +1,4 @@
-# DESCRIPTION="" CHALLENGER="" OPPONENT="" sh  scripts/matches/create-matches.sh
+# DESCRIPTION="Card Game" CHALLENGER="Gabriel" OPPONENT="Renee" sh  scripts/matches/create-matches.sh
 
 curl "http://localhost:4741/matches" \
   --include \
@@ -8,9 +8,7 @@ curl "http://localhost:4741/matches" \
     "match": {
       "description": "'"${DESCRIPTION}"'",
       "challenger": "'"${CHALLENGER}"'",
-      "opponent": "'"${OPPONENT}"'",
-      "winner": "'"${WINNER}"'",
-      "loser": "'"${LOSER}"'"
+      "opponent": "'"${OPPONENT}"'"
     }
   }'
 
