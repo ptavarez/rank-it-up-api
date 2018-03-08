@@ -1,4 +1,4 @@
-class MatchesController < ApplicationController
+class MatchesController < OpenReadController
   before_action :set_match, only: [:show, :update, :destroy]
 
   # GET /matches
