@@ -1,4 +1,5 @@
 #!/bin/bash
+# TOKEN="" TEXT="Example" sh scripts/examples/create-example.sh
 
 curl "http://localhost:4741/examples" \
   --include \
