@@ -1,3 +1,4 @@
 class MatchSerializer < ActiveModel::Serializer
-  attributes :id, :description, :challenger, :opponent, :winner, :loser
+  attributes :id, :description, :player_id, :challenger, :opponent, :winner,
+             :loser
 end
