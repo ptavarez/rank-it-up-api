@@ -1,5 +1,5 @@
 class PlayersController < OpenReadController
-  before_action :set_player, only: [:show, :update, :destroy]
+  before_action :set_player, only: %i[show update destroy]
 
   # GET /players
   def index
@@ -15,7 +15,7 @@ class PlayersController < OpenReadController
 
   # POST /players
   def create
-    @player = Player.new(player_params)
+    @player = current_user.players.build(player_params)
 
     if @player.save
       render json: @player, status: :created, location: @player
@@ -38,14 +38,15 @@ class PlayersController < OpenReadController
     @player.destroy
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_player
-      @player = Player.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_player
+    @player = current_user.players.find(params[:id])
+  end
 
-    # Only allow a trusted parameter "white list" through.
-    def player_params
-      params.require(:player).permit(:name, :description, :wins, :losses)
-    end
+  # Only allow a trusted parameter "white list" through.
+  def player_params
+    params.require(:player).permit(:name, :description, :wins, :losses)
+  end
+
+  private :set_player, :player_params
 end
