@@ -14,6 +14,11 @@ require 'action_controller/railtie'
 # require 'sprockets/railtie'
 # require 'rails/test_unit/railtie'
 
+config.action_dispatch.default_headers = {
+  'Access-Control-Allow-Origin' => 'http://my-web-service-consumer-site.com',
+  'Access-Control-Request-Method' => %w[GET POST OPTIONS].join(',')
+}
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
