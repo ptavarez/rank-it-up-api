@@ -1,4 +1,4 @@
-class MatchesController < OpenReadController
+class MatchesController < ProtectedController
   before_action :set_match, only: [:show, :update, :destroy]
 
   # GET /matches

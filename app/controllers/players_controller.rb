@@ -1,4 +1,4 @@
-class PlayersController < OpenReadController
+class PlayersController < ProtectedController
   before_action :set_player, only: %i[show update destroy]
 
   # GET /players
