@@ -16,7 +16,7 @@ A quick look at what it took to complete this project:
 
 ### Links
 
-- [Application's Client Repository](https://github.com/ptavarez16/rank-it-up-api)
+- [Application's Client Repository](https://github.com/ptavarez16/rank-it-up)
 
 - [Application's Deployment](http://pedrotavarez.com/rank-it-up/)
 
