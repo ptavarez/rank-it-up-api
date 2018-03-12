@@ -4,6 +4,13 @@
 
 Hello githubber! This repo contains the code I used to build the backend of my first fullstack application, Rank It Up: A Standings Generating Application. Rank It Up allows users to create players or teams. Once a player or team is created, users are able to face them off against each other in a match. Within a match, they will determine the outcome and choose a winner, loser, or decide if it's a draw. The application will keep record of each player's or team's wins and losses to make a standing table. This table will rank the player/team with the most wins and/or losses.
 
+Link to the application's client deployment: http://pedrotavarez.com/rank-it-up/
+
+Link to application's production:
+https://rank-it-up.herokuapp.com/
+
+
+
 ## Overview
 
 A quick look at what it took to complete this project:
@@ -72,4 +79,4 @@ Eventually, I will like to create another resource called Club. A user will have
 
 A problem I know I will need to solve in the near future is within the match resource. A match belongs to one player/team, but in reality it belongs to two players/teams. I need to figure out a way to make it so that both parties share a match.
 
-For now, this API has all the necessary databases to fulfill requests for the client. As time goes on, this API will change and grow more complex. Even so, as long as I stay organized, things should still flow smoothly. 
+For now, this API has all the necessary databases to fulfill requests for the client. As time goes on, this API will change and grow more complex. Even so, as long as I stay organized, things should still flow smoothly.
