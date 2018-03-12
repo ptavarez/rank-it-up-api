@@ -82,3 +82,11 @@ Eventually, I will like to create another resource called Club. A user will have
 A problem I know I will need to solve in the near future is within the match resource. A match belongs to one player/team, but in reality it belongs to two players/teams. I need to figure out a way to make it so that both parties share a match.
 
 For now, this API has all the necessary databases to fulfill requests for the client. As time goes on, this API will change and grow more complex. Even so, as long as I stay organized, things should still flow smoothly.
+
+Here's a list of things I need to work on:
+- Match resource modification
+  - A match should have a reference to two different players
+- Club resource addition
+  - A club has many matches
+  - Club controller: clubs should only be viewable to owning users
+- Remove user_id reference from player and add to club 
