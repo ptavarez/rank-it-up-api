@@ -4,14 +4,12 @@
 
 Hello githubber! This repo contains the code I used to build the backend of my first fullstack application, Rank It Up: A Standings Generating Application. Rank It Up allows users to create players or teams. Once a player or team is created, users are able to face them off against each other in a match. Within a match, they will determine the outcome and choose a winner, loser, or decide if it's a draw. The application will keep record of each player's or team's wins and losses to make a standing table. This table will rank the player/team with the most wins and/or losses.
 
+## Overview
+
 Link to the application's client deployment: http://pedrotavarez.com/rank-it-up/
 
 Link to application's production:
 https://rank-it-up.herokuapp.com/
-
-
-
-## Overview
 
 A quick look at what it took to complete this project:
 
