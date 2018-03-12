@@ -5,7 +5,7 @@ class PlayersController < ProtectedController
   def index
     @players = Player.all
 
-    render json: @players
+    render json: base_query
   end
 
   # GET /players/1
@@ -48,5 +48,9 @@ class PlayersController < ProtectedController
     params.require(:player).permit(:name, :description, :wins, :losses)
   end
 
-  private :set_player, :player_params
+  def base_query
+    Player.where('user_id = :user', user: current_user.id)
+  end
+
+  private :set_player, :player_params, :base_query
 end
