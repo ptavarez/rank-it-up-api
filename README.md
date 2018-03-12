@@ -6,11 +6,6 @@ Hello githubber! This repo contains the code I used to build the backend of my f
 
 ## Overview
 
-Link to the application's client deployment: http://pedrotavarez.com/rank-it-up/
-
-Link to application's production:
-https://rank-it-up.herokuapp.com/
-
 A quick look at what it took to complete this project:
 
 - Entity Relationship Diagram
@@ -18,6 +13,8 @@ A quick look at what it took to complete this project:
 - Technologies Used
 - Story
 - Still Have Work To Finish
+
+Link to the application's client repository: https://github.com/ptavarez16/rank-it-up-api
 
 ## Entity Relationship Diagram
 
