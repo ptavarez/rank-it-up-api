@@ -77,7 +77,7 @@ I found it pretty cool that the authentication migration files were taken care f
 
 ## Still Have Work To Finsih
 
-Eventually, I will like to create another resource called Club. A user will have many clubs, and a club will have many players/teams and matches. This would be greate because a User will then not have to create a different account if they want to keep track of rankings for a different thing.
+Eventually, I will like to create another resource called Club. A user will have many clubs, and a club will have many players/teams and matches. This would be great because a User will then not have to create a different account if they want to keep track of rankings for a different thing.
 
 A problem I know I will need to solve in the near future is within the match resource. A match belongs to one player/team, but in reality it belongs to two players/teams. I need to figure out a way to make it so that both parties share a match.
 
