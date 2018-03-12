@@ -14,7 +14,17 @@ A quick look at what it took to complete this project:
 - Story
 - Still Have Work To Finish
 
-Link to the application's client repository: https://github.com/ptavarez16/rank-it-up-api
+### Links
+
+- Application's client repository:
+  - https://github.com/ptavarez16/rank-it-up-api
+
+- Application's deployment:
+  - http://pedrotavarez.com/rank-it-up/
+
+- Application's production:
+  - https://rank-it-up.herokuapp.com/
+
 
 ## Entity Relationship Diagram
 
