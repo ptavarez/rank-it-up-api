@@ -13,6 +13,14 @@ class PlayersController < ProtectedController
     render json: @player
   end
 
+  def most_wins
+    @player = current_user.players
+
+    @king_of_games = @player.order('wins desc')
+
+    render json: @king_of_games
+  end
+
   # POST /players
   def create
     @player = current_user.players.build(player_params)

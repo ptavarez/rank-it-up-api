@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   resources :examples, except: %i[new edit]
   resources :users, only: %i[index show update]
 
+  get '/most_wins' => 'players#most_wins'
+
   # Custom routes
   post '/sign-up' => 'users#signup'
   post '/sign-in' => 'users#signin'
