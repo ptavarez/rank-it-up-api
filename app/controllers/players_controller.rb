@@ -16,7 +16,7 @@ class PlayersController < ProtectedController
   def most_wins
     @player = current_user.players
 
-    @king_of_games = @player.order('wins desc')
+    @king_of_games = @player.limit(10).order('wins::integer desc')
 
     render json: @king_of_games
   end
