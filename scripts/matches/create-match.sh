@@ -1,4 +1,4 @@
-# TOKEN="" DESCRIPTION="" CHALLENGER="" OPPONENT="" sh  scripts/matches/create-match.sh
+# TOKEN= DESCRIPTION="Test Duel" CHALLENGER=Dro OPPONENT=Gabe WINNER=Gabe LOSER=Dro sh  scripts/matches/create-match.sh
 
 curl "http://localhost:4741/matches" \
   --include \
@@ -9,7 +9,9 @@ curl "http://localhost:4741/matches" \
     "match": {
       "description": "'"${DESCRIPTION}"'",
       "challenger": "'"${CHALLENGER}"'",
-      "opponent": "'"${OPPONENT}"'"
+      "opponent": "'"${OPPONENT}"'",
+      "winner": "'"${WINNER}"'",
+      "loser": "'"${LOSER}"'"
     }
   }'
 
