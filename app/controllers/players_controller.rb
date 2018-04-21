@@ -1,11 +1,11 @@
-class PlayersController < ProtectedController
+class PlayersController < OpenReadController
   before_action :set_player, only: %i[show update destroy]
 
   # GET /players
   def index
     @players = Player.all
 
-    render json: base_query
+    render json: @players
   end
 
   # GET /players/1
